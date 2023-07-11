@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>javascript</title>
+    <script>
+      // let practice = [
+      //   "red",
+      //   "orange",
+      //   "yellow",
+      //   "green",
+      //   "blue,",
+      //   "navy",
+      //   "purple",
+      // ];
+      // console.log(
+      //   `${practice[0]}, ${practice[1]}, ${practice[2]}, ${practice[3]}`
+      // );
+      // console.log(`${practice[2]}`);
+      // practice.push("tomato");
+      // console.log(`${practice}`);
+      // console.log(`${practice.indexOf("black")}`);
+      // console.log(`${practice.reverse()}`);
+      // console.log("---------------------------------------");
+      // console.log(`${typeof 123} isn't ${typeof "문자"} data type`);
+      // console.log(
+      //   `Typeof를 boolean이나 null에 사용하면, ${typeof null} 결과를 얻을 수 있습니다.`
+      // );
+      // let mathScore = Number(prompt("수학 점수를 입력 하세요"));
+      // let engScore = Number(prompt("영어 점수를 입력 하세요"));
+      // let avg = (mathScore + engScore) / 2;
+      // console.log(mathScore);
+      // console.log(engScore);
+      // console.log(avg);
+      // function multifly(num1, num2) {
+      //   let result = num1 * num2;
+      //   return result;
+      // }
+      // console.log(multifly(3, 7));
+      // console.log(multifly(2, 2));
+      // function square(num1) {
+      //   console.log(num1 * num1);
+      // }
+      // square(4);
+      // square(11);
+      // square(5);
+      // let num1 = Number(prompt("첫 번째 숫자"));
+      // let num2 = Number(prompt("두 번째 숫자"));
+      // function add() {
+      //   alert(num1 + num2);
+      // }
+      // function sub() {
+      //   alert(num1 - num2);
+      // }
+      // function divide() {
+      //   alert(num1 * num2);
+      // }
+      // function mul() {
+      //   alert(num1 / num2);
+      // }
+      let a = prompt("나이를 입력해 주세요");
+      let sex = prompt("성별을 입력해 주세요 남/여");
+      // if (a >= 20) {
+      //   if (sex == "남") {
+      //     sex = "남성";
+      //   } else {
+      //     sex = "여성";
+      //   }
+      //   if (a >= 8) {
+      //     if (sex == "남") {
+      //       sex = "남학생";
+      //     } else {
+      //       sex = "여학생";
+      //     }
+      //   }
+      //   if (a >= 0) {
+      //     if (sex == "남") {
+      //       sex = "남아";
+      //     } else {
+      //       sex = "여아";
+      //     }
+      //   }
+      // }
+      if (a >= 20) {
+        if (a >= 8) {
+          if (a >= 0) {
+            if (sex == "남") {
+              sex = "남아";
+            } else {
+              sex = "여아";
+            }
+          } else if (sex == "남") {
+            sex = "남학생";
+          } else {
+            sex = "여학생";
+          }
+        } else if (sex == "남") {
+          sex = "남성";
+        } else {
+          sex = "여성";
+        }
+        // if (a >= 8) {
+        //   if (sex == "남") {
+        //     sex = "남학생";
+        //   }
+        // } else {
+        //   sex = "여학생";
+        // }
+        // if (a >= 0) {
+        //   if (sex == "남") {
+        //     sex = "남아";
+        //   }
+        // } else {
+        //   sex = "여아";
+        // }
+      }
+      if (a >= 20) {
+        console.log(`성인 ${sex}`);
+      } else if (a >= 17) {
+        console.log(`고등학생 ${sex}`);
+      } else if (a >= 14) {
+        console.log(`중학생 ${sex}`);
+      } else if (a >= 8) {
+        console.log(`초등학생 ${sex}`);
+      } else if (a >= 0) {
+        console.log(`유아 ${sex}`);
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="divide()">divide</button>
+    <button onclick="mul()">mul</button> -->
+  </body>
+</html>
